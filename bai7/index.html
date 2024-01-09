@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            font-size: 10px;
+            color: red;
+        }
+        .border-red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to make a form</h1>
+    <!-- Action: Đường dẫn đến server -->
+    <!-- Method: GET/POST -->
+    <form action="#" method="POST" id="form">
+        <h2>1. Form đăng nhập</h2>
+        <h2>2. http://127.0.0.1:5500/bai7/index.html?username=tuva9&password=1</h2>
+
+        <h2>3. Validate form</h2>
+        <div>
+            <label for="">Tên sinh viên</label>
+            <input type="text" name="name" placeholder="Email người dùng" id="name">
+            <div class="error error-name"></div>
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="Email người dùng" id="email">
+            <div class="error error-email"></div>
+        </div>
+        <div>
+            <label for="">Javascript</label>
+            <input type="number" name="js" placeholder="Điểm javascript" id="js">
+            <div class="error error-js"></div>
+        </div>
+        <div>
+            <label for="">CSDL</label>
+            <input type="number" name="csdl" placeholder="Điểm CSDL" id="csdl">
+            <div class="error error-csdl"></div>
+        </div>
+        <div>
+            <label for="">Vovinam</label>
+            <input type="number" name="vovinam" placeholder="Điểm Vovinam" id="vovinam">
+            <div class="error error-vovinam"></div>
+        </div>
+        <button type="submit">Gửi</button>
+    </form>
+    <table border="">
+        <thead>
+            <td>Tên sinh viên</td>
+            <td>Email</td>
+            <td>Javascript</td>
+            <td>CSDL</td>
+            <td>Vovinam</td>
+        </thead>
+        <tbody id="table">
+            <tr>
+                <td>Hoang Duy Long</td>
+                <td>longhd@gmail.com</td>
+                <td>10</td>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./form.js"></script>
+</body>
+</html>

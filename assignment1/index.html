@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <img class="logo" src="./images/logo.png" alt="">
+            <div class="navigation">
+                <ul>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Almanac</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Guides</a></li>
+                    <li><a href="">DigitalOcean</a></li>
+                </ul>
+            </div>
+            <button class="search" onclick="alert('search')">
+                <svg style="width: 30px; color: white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <svg style="width: 30px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path style="font-weight: bold" stroke-linecap="round" stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="modal-search">
+                <input id="modal-search-input" type="text" placeholder="search">
+                <button class="search" onclick="search()">
+                    <svg style="width: 30px; color: white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="articles">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+<script>
+    addEventListener("load", (event) => {
+        console.log("xxx")
+    });
+</script>
+
+</html>
